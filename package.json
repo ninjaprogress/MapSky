@@ -1,0 +1,16 @@
+{
+  "name": "mapsky-pilot-flight-radar-hud",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "MapSky Pilot: Google Photorealistic 3D flight HUD with live aircraft radar.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/dev.mjs",
+    "start": "node server/prod-server.mjs",
+    "check": "node --check web/app.js && node --check web/map3d.js && node --check web/maps-loader.js && node --check web/radar.js && node --check server/opensky.mjs && node --check server/prod-server.mjs && node --check api/flights.mjs && node --check netlify/functions/flights.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
